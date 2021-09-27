@@ -1,31 +1,5 @@
 'use strict';
 
-/*
-  STEP1 : 骰子骰出來
-  - Math.trunc(Math.random() * 6) + 1
-  - 顯示出骰子 -> classList.remove('hidden') & src 替換圖片
-
-  STEP2 : 判斷是否能繼續骰
-  - 判斷是否骰到1 -> 如果沒有把數值累計，如果有就換手
-  
-
-  STEP3 : 換手細節
-  - 換手前要先清空累計的變數值
-  - activePlayer變數切換, 0 -> 1 , 1 -> 0
-  - player0El & player1El -> toggle 外觀
-
-  STEP4 : HOLD
-  - 累計值儲存到陣列中
-  - DOM也更新成陣列中最新的值
-
-  STEP5 : 贏了
-  - DOM 給贏的外觀
-  - 贏了就不能操作，所以用一個playing變數來判斷是否遊戲已結束
-  - 按鈕要操作之前都要先看playing是不是true
-*/
-
-'use strict';
-
 // Selecting elements
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
